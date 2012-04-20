@@ -1,0 +1,21 @@
+/* no border on timestamp */
+.custom-style #chat_log table tr.timestamp td {
+  border: none;
+}
+
+/* fine line over each message, and on last row if it's timestamp */
+.custom-style #chat_log table tr td,
+.custom-style #chat_log table tr.timestamp:last-child td {
+  border-top: 1px dotted #ccc;
+}
+
+/* no blockquote tail */
+.custom-style #chat_log table tr td.author b.blockquote_tail{
+  border: none;
+}
+
+/* blockquote white background */
+.custom-style #chat_log table tr td.message blockquote {
+  background: #FFF;
+}
+
